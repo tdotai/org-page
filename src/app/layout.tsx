@@ -20,7 +20,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={cabin.className}>
         <Navbar/>
-        {children}
+        <div className="w-full m-auto px-6 py-12 max-w-[1200px]">
+          {children}
+        </div>
       </body>
     </html>
   );

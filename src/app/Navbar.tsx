@@ -12,8 +12,8 @@ export const Navbar = () => {
       <Icon icon="ooui:vision-simulator" width="60px" height="60px" style={{border: "1px solid white", flexShrink: 0}}/>
       <p className={oswald.className} style={{fontSize: "24px"}}>tdashai</p>
       <div className="flex flex-1 justify-center content-center">
-        <NavButton>Home</NavButton>
-        <NavButton>Our Projects</NavButton>
+        <NavButton href="/">Home</NavButton>
+        <NavButton href="/projects">Our Projects</NavButton>
       </div>
     </nav>
   );

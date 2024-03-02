@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -7,18 +8,21 @@ export default function Home() {
       <div className="mt-2 lg:w-2/3">
         <h1 className="text-[#E08AED] font-bold text-6xl">Exploring & Developing Possibilities of <span style={{'color': "#9DB3E2"}}>AI</span></h1>
         <p className="text-2xl my-6">We are a group of developers that are interested in developing products utilizing the continuously growing potential of <span style={{'color': "#9DB3E2"}}>artificial intelligence.</span></p>
-        <button 
-          style={{
-            backgroundColor : "#9DB3E2", 
-            width:"300px", 
-            height:"64px", 
-            fontWeight:"bold", 
-            fontSize:"28px",
-            boxShadow: "10px 10px #E08AED",
-            }}
-          >
-          Our Projects
-        </button>
+        <Link href="/projects">
+          <button 
+            style={{
+              backgroundColor : "#9DB3E2", 
+              width:"300px", 
+              height:"64px", 
+              fontWeight:"bold", 
+              fontSize:"28px",
+              boxShadow: "10px 10px #E08AED",
+              }}
+            >
+            Our Projects
+          </button>
+        </Link>
+
       </div>
       <div className="w-full lg:w-1/3">
         <Image src={`/image/homepage_ai.png`} 
@@ -29,7 +33,6 @@ export default function Home() {
           className="m-auto w-1/2 lg:w-full"
           />
       </div>
-
     </div>
   );
 }
